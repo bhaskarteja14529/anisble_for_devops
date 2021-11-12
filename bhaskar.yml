@@ -8,3 +8,9 @@
      state: present
     when: ansible_os_family=="Debian"
 
+  - name: webserver on redhat
+    apt: 
+      name: httpd
+      state: present
+    when: ansible_os_family=="RedHat"
+
