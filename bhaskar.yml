@@ -10,7 +10,7 @@
 
   - name: start the apache service is not stasrtyefg\
     service:
-      name: "{{my_redhat_web_package}}"
+      name: "{{my_ubuntu_web_package}}"
       state: restarted
     when: ansible_os_family=="Debian"
 
