@@ -4,13 +4,13 @@
   tasks:
   - name: webserver
     apt:
-     name: apache2
+     name: "{{my_ubuntu_web_package}}"
      state: present
     when: ansible_os_family=="Debian"
 
   - name: start the apache service is not stasrtyefg\
     service:
-      name: apache2
+      name: "{{my_redhat_web_package}}"
       state: restarted
     when: ansible_os_family=="Debian"
 

@@ -20,3 +20,7 @@
 172.31.23.17
 
 
+[mywevservers:vars]
+key=value
+my_ubuntu_web_package=apache2
+my_redhat_web_package=httpd
