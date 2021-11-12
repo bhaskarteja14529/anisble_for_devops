@@ -1,0 +1,11 @@
+--- 
+- hosts: 172.31.12.187
+  become: yes
+  tasks:
+  - name: i want to excute the linux command
+    command: uname
+    register: uname
+
+  - name: display purpose
+    debug:
+      msg: "{{uname}}"
