@@ -2,25 +2,3 @@
 172.31.12.187
 172.31.23.117
 
-[myappservers]
-172.31.12.87
-172.31.23.17
-
-
-[mydbservers]
-172.31.12.87
-172.31.23.17
-
-[myubuntuservers]
-172.31.12.87
-172.31.23.17
-
-[myredhatservers]
-172.31.12.87
-172.31.23.17
-
-
-[mywevservers:vars]
-key=value
-my_ubuntu_web_package=apache2
-my_redhat_web_package=httpd
