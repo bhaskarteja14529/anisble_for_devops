@@ -6,7 +6,5 @@
     apt:
      name: apache2
      state: present
-  - name: git
-    apt:
-     name: git
-     state: absent
+  
+
