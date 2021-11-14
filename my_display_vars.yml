@@ -4,8 +4,8 @@
   tasks:
   - name: i want to excute the linux command
     command: uname
-    register: uname
+    register: saved_result
 
   - name: display purpose
     debug:
-      msg: "{{uname}}"
+      msg: "{{saved_result}}"
