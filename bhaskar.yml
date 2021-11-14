@@ -2,13 +2,13 @@
 - hosts: all
   become: yes
   tasks:
-  - name: webserver
+  - name: I WANT TO INSTALL WEBSERVER ON UBUNTU MACHINE
     apt:
      name: "{{my_ubuntu_web_package}}"
      state: present
     when: ansible_os_family=="Debian"
 
-  - name: start the apache service is not stasrtyefg\
+  - name: start the apache service 
     service:
       name: "{{my_ubuntu_web_package}}"
       state: restarted
@@ -23,7 +23,7 @@
   
   - name: i want to restart the httpd service on redhat
     service: 
-     name: httpd
+     name: "{{my_redhat_web_package}}"
      state: restarted
     when: ansible_os_family=="RedHat"
 
