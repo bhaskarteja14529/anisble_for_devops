@@ -1,10 +1,10 @@
 --- 
 - name: i want to create folder
   file:
-  path: /home/ubuntu/myfolder
-  state: directory
+   path: /home/ubuntu/myfolder
+   state: directory
 
 - name: i want to create fileone
   file: 
-  path: /home/ubuntu/myfolder/fileone
-  state: touch
+   path: /home/ubuntu/myfolder/fileone
+   state: touch
