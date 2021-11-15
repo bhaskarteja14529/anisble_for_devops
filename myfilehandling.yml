@@ -6,4 +6,4 @@
     file:
       path: /home/ubuntu/bhaskartestfile
       state: touch
-    -include_tasks: myfile.yml
+    include_tasks: myfile.yml
