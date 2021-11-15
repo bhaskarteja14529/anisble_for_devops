@@ -7,3 +7,13 @@
       path: /home/ubuntu/bhaskartestfile
       state: touch
   - include_tasks: myfile.yml
+
+  - name: i want to install webserver
+    apt: 
+     name: apache2
+     state: present
+
+  - name: i want to copy the index_file to node side
+    template:
+      src: myindex.j2
+      dest: /var/www/html/index.html
