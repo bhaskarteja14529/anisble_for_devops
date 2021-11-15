@@ -4,5 +4,3 @@
      name: apache2
      state: present
 
-     roles:
-     - {role: mywebrole, ansible_os_family=="Debian"}
